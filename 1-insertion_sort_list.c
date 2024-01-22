@@ -2,7 +2,7 @@
 
 /**
  * insertion_sort_list - Sorts a doubly linked list of integers
- * 			using the insertion sort algorithm.
+ * using the insertion sort algorithm.
  * @list: Pointer to the head of the doubly linked list.
  */
 
