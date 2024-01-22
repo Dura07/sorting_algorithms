@@ -1,0 +1,6 @@
+O-notation for Insertion Sort:
+
+- Best case: O(n)  (when the list is already sorted)
+- Average case: O(n^2)
+- Worst case: O(n^2)
+
