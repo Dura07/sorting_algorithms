@@ -1,4 +1,5 @@
 #include "sort.h"
+#include <stdlib.h>
 
 /**
  * max_get - Get the highest value in an int array.
@@ -7,9 +8,10 @@
  *
  * Return: The highest/max int in the array.
  */
-int max_get(int *array, int size)
+int max_get(int *array, size_t size)
 {
-	int high, x;
+	int high;
+	size_t x;
 
 	for (high = array[0], x = 1; x < size; x++)
 	{
@@ -61,6 +63,10 @@ void counting_sort(int *array, size_t size)
 
 	for (x = 0; x < (int)size; x++)
 		array[x] = sorted[x];
+
+	print_array(count, high + 1);
+	printf("\n");
+
 
 	free(sorted);
 	free(count);
